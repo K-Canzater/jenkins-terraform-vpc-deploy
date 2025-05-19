@@ -1,5 +1,4 @@
-# jenkins-terraform-vpc-deploy
-Infrastructure automation project that deploys an AWS VPC using Terraform and Jenkins CI/CD pipeline.
+
 # jenkins-terraform-vpc-deploy 🚀
 
 Automated deployment of AWS VPC infrastructure using **Terraform** and **Jenkins CI/CD pipeline**.
