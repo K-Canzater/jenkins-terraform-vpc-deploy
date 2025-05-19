@@ -41,16 +41,21 @@ This project sets up a complete AWS Virtual Private Cloud (VPC) environment usin
 
 ## 📁 Project Structure
 
-.
+project-root/
 ├── modules/
-│ └── vpc/ # Reusable VPC module (main.tf, variables.tf, outputs.tf)
+│   └── vpc/                    # Reusable VPC module
+│       ├── main.tf             # VPC resource definitions
+│       ├── variables.tf        # Input variables for the module
+│       └── outputs.tf          # Output values from the module
 ├── environments/
-│ └── dev/ # Dev environment using the VPC module
-│ ├── main.tf
-│ ├── variables.tf
-│ └── backend.tf
-├── Jenkinsfile # Jenkins pipeline definition
-├── README.md
+│   └── dev/                    # Development environment
+│       ├── main.tf             # Main configuration using VPC module
+│       ├── variables.tf        # Environment-specific variables
+│       ├── backend.tf          # Terraform backend configuration
+│       └── terraform.tfvars    # Variable values (optional)
+├── Jenkinsfile                 # Jenkins CI/CD pipeline definition
+├── README.md                   # Project documentation
+└── .gitignore                  # Git ignore file (recommended)
 
 ## 🚀 Getting Started
 
