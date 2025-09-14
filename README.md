@@ -1,57 +1,29 @@
 
-# jenkins-terraform-vpc-deploy 🚀
+# 🚀 QA-Focused AWS VPC Deployment Automation
 
-Automated deployment of AWS VPC infrastructure using **Terraform** and **Jenkins CI/CD pipeline**.
-
-## 📌 Overview
-
-This project sets up a complete AWS Virtual Private Cloud (VPC) environment using **Infrastructure as Code (IaC)** principles. A **Jenkins pipeline** is used to automate Terraform workflows, making the provisioning process repeatable, consistent, and hands-free.
-
-## 🔧 Tools & Technologies
-
-- **Terraform** – Infrastructure as Code
-- **Jenkins** – CI/CD pipeline automation
-- **AWS** – Cloud infrastructure (VPC, Subnets, Route Tables, etc.)
-- **S3 + DynamoDB** – Remote backend for Terraform state management
-- **GitHub** – Source control and integration with Jenkins
-
-## 🏗️ Infrastructure Components
-
-- VPC
-- Public and Private Subnets
-- Route Tables and Associations
-- Internet Gateway
-- Security Groups
-
-## 🔁 CI/CD Flow
-
-1. **Code pushed to GitHub**
-2. **Jenkins** pulls the repo and runs:
-   - `terraform init`
-   - `terraform plan`
-   - `terraform apply`
-3. Infrastructure is deployed to AWS automatically
-
-## 🛡️ IAM & State Management
-
-- **IAM Role/User** created for Jenkins with least privilege permissions
-- **Remote Terraform State** stored securely in S3
-- **State Locking** handled via DynamoDB to prevent conflicts
-
-
-## 🚀 Getting Started
-
-To run this project:
-
-1. Set up AWS credentials in Jenkins securely
-2. Configure your remote backend (S3 + DynamoDB)
-3. Push changes to GitHub
-4. Jenkins will detect changes and deploy infra using Terraform
-
-## ✅ Future Enhancements
-
-- Add EC2, RDS, or EKS modules
-- Add Slack notifications to Jenkins
-- Add dev/staging/prod environment separation
+## Project Overview:
+This project demonstrates **automated, validated deployment of AWS Virtual Private Cloud (VPC) infrastructure** using Terraform and Jenkins CI/CD pipelines. Emphasis is on **repeatable, error-free infrastructure provisioning**, aligned with QA principles of consistency, auditing, and defect prevention.
 
 ---
+## QA-Relevant Goals:
+
+- Validate that all infrastructure components (VPC, subnets, route tables, IGW, security groups) are deployed as specified
+- Ensure repeatable provisioning with zero manual steps
+- Document deployment processes for audit and reproducibility
+- Test infrastructure integrity via CI/CD validation workflow
+---
+## Skills Demonstrated (QA-Related):
+
+- Infrastructure validation using Terraform plan/apply checks
+- Automation of deployment testing through Jenkins pipelines
+- Secure and auditable management of infrastructure state (S3 + DynamoDB)
+- Process-oriented workflow design ensuring reliable environment setup
+---
+## Tech Stack:
+- Terraform | Jenkins | AWS (VPC, Subnets, Route Tables, Internet Gateway, Security Groups) | S3 & DynamoDB | GitHub
+
+## Impact / QA Takeaway:
+
+- Highlights ability to **verify infrastructure meets specifications consistently**
+- Shows strong **process adherence, auditing mindset, and automation skills**
+- Demonstrates readiness for QA roles requiring **validation of complex systems, test automation, and procedural documentation**
